@@ -47,11 +47,11 @@
   </entry>
   
   <entry>
-    <title>Hello World;</title>
-    <link href="furr3r.github.io/2018/10/27/hello-world/"/>
-    <id>furr3r.github.io/2018/10/27/hello-world/</id>
-    <published>2018-10-27T03:24:12.982Z</published>
-    <updated>2018-10-28T03:59:17.135Z</updated>
+    <title>Hello world!</title>
+    <link href="furr3r.github.io/2018/10/20/hello-world/"/>
+    <id>furr3r.github.io/2018/10/20/hello-world/</id>
+    <published>2018-10-20T13:03:09.000Z</published>
+    <updated>2018-10-28T13:06:05.614Z</updated>
     
     <summary type="html">
     
@@ -59,12 +59,17 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;hr&gt;
+&lt;h3 id=&quot;第一篇博客写给自己———勿忘初心。&quot;&gt;&lt;a href=&quot;#第一篇博客写给自己———勿忘初心。&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
+      <category term="牢骚" scheme="furr3r.github.io/categories/%E7%89%A2%E9%AA%9A/"/>
+    
+    
+      <category term="自勉" scheme="furr3r.github.io/tags/%E8%87%AA%E5%8B%89/"/>
     
   </entry>
   

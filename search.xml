@@ -30,13 +30,25 @@
     </entry>
     
     <entry>
-      <title>Hello World;</title>
-      <link href="/2018/10/27/hello-world/"/>
-      <url>/2018/10/27/hello-world/</url>
+      <title>Hello world!</title>
+      <link href="/2018/10/20/hello-world/"/>
+      <url>/2018/10/20/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<hr><h3 id="第一篇博客写给自己———勿忘初心。"><a href="#第一篇博客写给自己———勿忘初心。" class="headerlink" title="第一篇博客写给自己———勿忘初心。"></a>第一篇博客写给自己———<strong>勿忘初心。</strong></h3><ul><li>不知不觉间，大三的老学长了，想想自己前段时间的纠结—考研还是就业？其实现在想想也挺好笑的，有什么好纠结的呢，考研好点的学校门槛都进不了，读差点的学校研，一切还是得靠自己，所以，对计科专业的我来说，这样子读三年混个硕士文凭还不如出去就业攒三年工作经验成长得多。</li><li>但是现在的自己，没有什么实际的能力，没有什么拿得出手的东西……这样子出去还怎么混，所以在此立下flag，每周更一博，记录自己的所学所获，坚持下去，java、linux、数据结构、python等等，还有一大堆等着，接下来一年，加油~~~</li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> 牢骚 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 自勉 </tag>
+            
+        </tags>
       
     </entry>
     
