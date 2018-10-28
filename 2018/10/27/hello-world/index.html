@@ -171,13 +171,13 @@
         
     </ul>
 
-    <div class="social-link"><a href="https://github.com/furr3r" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <div class="social-link"><a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
     <i class="fa fa-github"></i>
 </a>
-<a href="mailto:dingzhenfu1109@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+<a href="mailto:chenjiayin1990@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
     <i class="fa fa-envelope-open"></i>
 </a>
-<a href="#!" class="tooltipped" data-tooltip="QQ联系我: 422860636" data-position="top" data-delay="50">
+<a href="#!" class="tooltipped" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
     <i class="fa fa-qq"></i>
 </a>
 
@@ -268,35 +268,44 @@
 <main class="post-container content">
 
     
-    <style>
-    #artDetail h1,
-    #artDetail h2,
-    #artDetail h3,
-    #artDetail h4,
-    #artDetail h5,
-    #artDetail h6 {
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1,
+    #articleContent h2,
+    #articleContent h3,
+    #articleContent h4,
+    #articleContent h5,
+    #articleContent h6 {
         padding-top: 76px;
         margin-top: -76px;
     }
 
-    #artDetail h1 {
-        line-height: 3.3rem;
+    #articleContent h1 {
+        line-height: 3.5rem;
     }
 
-    #artDetail h2 {
-        line-height: 3rem;
+    #articleContent h2 {
+        line-height: 3.2rem;
     }
 
-    #artDetail h3 {
+    #articleContent h3 {
+        line-height: 2.8rem;
+    }
+
+    #articleContent h4 {
         line-height: 2.5rem;
     }
 
-    #artDetail h4 {
+    #articleContent h5 {
         line-height: 2.2rem;
     }
 
-    #artDetail h5 {
+    #articleContent h6 {
         line-height: 1.9rem;
+    }
+
+    #articleContent :focus {
+        outline: none;
     }
 
     .toc-fixed {
@@ -308,28 +317,44 @@
         padding-left: 20px;
     }
 
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
     .toc-widget ol {
         padding: 0;
         list-style: none;
     }
 
-    .post-toc ol {
-        padding-left: 20px;
+    #toc-content ol {
+        padding-left: 10px;
     }
 
-    .post-toc a {
-        color: #34495e;
-        font-size: 0.96rem;
+    #toc-content ol li {
+        padding-left: 10px;
     }
 
-    .post-toc a:hover {
+    #toc-content .toc-link:hover {
         color: #42b983;
+        font-weight: 700;
         text-decoration: underline;
     }
 
-    .post-toc .active {
+    #toc-content .toc-link::before {
+        background-color: #eaeaea;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
         color: #42b983;
-        font-weight: 500;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
     }
 </style>
 <div class="row">
@@ -368,6 +393,123 @@
             <hr>
 
             
+            <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.88rem;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff;
+        background-color: #22AB38;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff;
+        background-color: #019FE8;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a class="reward-link btn-floating btn-large waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close"><i class="fa fa-close"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs">
+                        <li class="tab wechat-tab waves-effect waves-light"><a class="active" href="#wechat">微信</a></li>
+                        <li class="tab alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                    </ul>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('#reward .reward-link').on('click', function () {
+            $('#rewardModal').openModal();
+        });
+
+        $('#rewardModal .close').on('click', function () {
+            $('#rewardModal').closeModal();
+        });
+    });
+</script>
+            
 
             <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 
@@ -395,30 +537,29 @@
     
 
     
-        <div class="disqus-card card" data-aos="fade-up">
-    <div id="disqus_thread" class="card-content">
-        <noscript>Please enable JavaScript to view the
-            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
+
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC80MDYwNi8xNzEzMw==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
     </div>
+    <!-- City版安装代码已完成 -->
 </div>
-
-<script type="text/javascript">
-    disqus_config = function () {
-        this.page.url = 'furr3r.github.io/2018/10/27/hello-world/';
-        this.page.identifier = '/2018/10/27/hello-world/';
-        this.page.title = 'Hello World;';
-    };
-    let disqus_shortname = 'MTAyMC80MDYwNi8xNzEzMw==';
-
-    (function () { // DON'T EDIT BELOW THIS LINE
-        let d = document, s = d.createElement('script');
-        // 如：s.src = 'https://blinkfox.disqus.com/embed.js';
-        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
     
 
     
@@ -516,69 +657,46 @@
     </div>
     <div class="col l3 hide-on-med-and-down">
         <div class="toc-widget">
-            <h4>目录</h4>
+            <div class="toc-title">目录</div>
             <div id="toc-content">
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+
             </div>
         </div>
     </div>
 </div>
 
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
-        let tocLinks = $('#toc-content a');
-        let setTocLinkActive = function (jqObj) {
-            tocLinks.removeClass('active');
-            jqObj.addClass('active');
-        };
-
-        // 监听点击TOC目录.
-        tocLinks.on('click', function () {
-            setTocLinkActive($(this));
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingSelector: 'h2, h3, h4'
         });
 
-        let titleTopArr = [];
-        $('#articleContent').find('h1, h2, h3, h4, h5, h6').each(function () {
-            titleTopArr.push({'id': $(this).attr('id'), 'top': Math.round($(this).offset().top)});
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
         });
-        let titleLen = titleTopArr.length;
 
-        /* 监听滚动条.*/
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
         let $tocWidget = $('.toc-widget');
         $(window).scroll(function () {
             let scroll = $(window).scrollTop();
-
             /* add post toc fixed. */
-            if (scroll > 240) {
+            if (scroll > tocHeight) {
                 $tocWidget.addClass('toc-fixed');
             } else {
                 $tocWidget.removeClass('toc-fixed');
-            }
-
-            /** 以下代码为动态设置TOC激活高亮的目录. */
-            if (titleLen === 0) {
-                return;
-            }
-
-            let firstTitleObj = titleTopArr[0];
-            if (firstTitleObj.top > scroll) {
-                return;
-            } else if (firstTitleObj.top === scroll) {
-                setTocLinkActive($('#toc-content a[href="#' + firstTitleObj.id + '"]'));
-                return;
-            }
-
-            let lastTitleObj = titleTopArr[titleLen - 1];
-            if (lastTitleObj.top <= scroll) {
-                setTocLinkActive($('#toc-content a[href="#' + lastTitleObj.id + '"]'));
-                return;
-            }
-
-            for (let i = 0; i < titleLen; i++) {
-                if (titleTopArr[i].top > scroll) {
-                    setTocLinkActive($('#toc-content a[href="#' + titleTopArr[i - 1].id + '"]'));
-                    break;
-                }
             }
         });
     });
@@ -594,13 +712,13 @@
             <a href="https://hexo.io/" target="_blank">Hexo</a> 采用
             <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>的主题搭建.
         </div>
-        <div class="col s12 m4 l4 social-link"><a href="https://github.com/furr3r" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <div class="col s12 m4 l4 social-link"><a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
     <i class="fa fa-github"></i>
 </a>
-<a href="mailto:dingzhenfu1109@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+<a href="mailto:chenjiayin1990@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
     <i class="fa fa-envelope-open"></i>
 </a>
-<a href="#!" class="tooltipped" data-tooltip="QQ联系我: 422860636" data-position="top" data-delay="50">
+<a href="#!" class="tooltipped" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
     <i class="fa fa-qq"></i>
 </a>
 
@@ -632,7 +750,7 @@
 <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fa fa-angle-double-up"></i>
+        <i class="fa fa-angle-up"></i>
     </a>
 </div>
 
