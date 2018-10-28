@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>furrer</title>
+  
+  <subtitle>furrer</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="furr3r.github.io/"/>
+  <updated>2018-10-28T08:14:27.437Z</updated>
+  <id>furr3r.github.io/</id>
+  
+  <author>
+    <name>福乐</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pat乙级1001解题报告</title>
+    <link href="furr3r.github.io/2018/10/28/pta%E4%B9%99%E7%BA%A71001%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/"/>
+    <id>furr3r.github.io/2018/10/28/pta乙级1001解题报告/</id>
+    <published>2018-10-28T03:09:07.000Z</published>
+    <updated>2018-10-28T08:14:27.437Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h6 id=&quot;1001-害死人不偿命的-3n-1-猜想-（15-分）&quot;&gt;&lt;a href=&quot;#1001-害死人不偿命的-3n-1-猜想-（15-分）&quot; class=&quot;headerlink&quot; title=&quot;1001 害死人不偿命的(3n+1)猜想 （15 分）&quot;&gt;&lt;/a&gt;1001
+        
+      
+    
+    </summary>
+    
+      <category term="解题报告" scheme="furr3r.github.io/categories/%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/"/>
+    
+    
+      <category term="PAT乙级水题" scheme="furr3r.github.io/tags/PAT%E4%B9%99%E7%BA%A7%E6%B0%B4%E9%A2%98/"/>
+    
+      <category term="算法学习" scheme="furr3r.github.io/tags/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Java学习" scheme="furr3r.github.io/tags/Java%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World;</title>
+    <link href="furr3r.github.io/2018/10/27/hello-world/"/>
+    <id>furr3r.github.io/2018/10/27/hello-world/</id>
+    <published>2018-10-27T03:24:12.982Z</published>
+    <updated>2018-10-28T03:59:17.135Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

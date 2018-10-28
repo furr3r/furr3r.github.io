@@ -5,8 +5,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World;, furrer">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="pat乙级1001解题报告, furrer">
+    <meta name="description" content="1001 害死人不偿命的(3n+1)猜想 （15 分）
+卡拉兹(Callatz)猜想：
+对任何一个正整数 n，如果它是偶数，那么把它砍掉一半；如果它是奇数，那么把 (3n+1) 砍掉一半。这样一直反复砍下去，最后一定在某一步得到 n=1。卡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World; | furrer</title>
+    <title>pat乙级1001解题报告 | furrer</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -249,13 +251,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World;
+                        pat乙级1001解题报告
                     </div>
                 </div>
             </div>
@@ -339,30 +341,105 @@
     <div class="card">
         <div class="card-content article-info">
             
+            <div class="article-tag">
+                
+                <a href="/tags/PAT乙级水题/" target="_blank">
+                    <span class="chip bg-color">PAT乙级水题</span>
+                </a>
+                
+                <a href="/tags/算法学习/" target="_blank">
+                    <span class="chip bg-color">算法学习</span>
+                </a>
+                
+                <a href="/tags/Java学习/" target="_blank">
+                    <span class="chip bg-color">Java学习</span>
+                </a>
+                
+            </div>
+            
             <div class="post-info">
+                
+                <span class="post-cate">
+                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                    
+                    <a href="/categories/解题报告/" class="post-category" target="_blank">
+                        解题报告
+                    </a>
+                    
+                </span>
                 
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-10-27
+                    <i class="fa fa-clock-o fa-fw"></i>2018-10-28
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+                <h6 id="1001-害死人不偿命的-3n-1-猜想-（15-分）"><a href="#1001-害死人不偿命的-3n-1-猜想-（15-分）" class="headerlink" title="1001 害死人不偿命的(3n+1)猜想 （15 分）"></a>1001 害死人不偿命的(3n+1)猜想 （15 分）</h6><hr>
+<p>卡拉兹(Callatz)猜想：</p>
+<p>对任何一个正整数 n，如果它是偶数，那么把它砍掉一半；如果它是奇数，那么把 (3n+1) 砍掉一半。这样一直反复砍下去，最后一定在某一步得到 n=1。卡拉兹在 1950 年的世界数学家大会上公布了这个猜想，传说当时耶鲁大学师生齐动员，拼命想证明这个貌似很傻很天真的命题，结果闹得学生们无心学业，一心只证 (3n+1)，以至于有人说这是一个阴谋，卡拉兹是在蓄意延缓美国数学界教学与科研的进展……</p>
+<p>我们今天的题目不是证明卡拉兹猜想，而是对给定的任一不超过 1000 的正整数 n，简单地数一下，需要多少步（砍几下）才能得到 n=1？</p>
+<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h1><hr>
+<p>每个测试输入包含 1 个测试用例，即给出正整数 n 的值。</p>
+<h1 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h1><hr>
+<p>输出从 n 计算到 1 需要的步数。</p>
+<h1 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h1><hr>
+<p>3</p>
+<h2 id="输出样例："><a href="#输出样例：" class="headerlink" title="#输出样例："></a>#输出样例：</h2><p>5</p>
+<hr>
+<p>java代码实现：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Scanner<span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String <span class="token punctuation">[</span><span class="token punctuation">]</span>args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">int</span> n<span class="token punctuation">,</span>cout<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+        Scanner sc<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span>System<span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        n<span class="token operator">=</span>sc<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>n<span class="token operator">!=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token operator">%</span><span class="token number">2</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+                n<span class="token operator">/=</span><span class="token number">2</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+                n <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">*</span> n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+            cout<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>cout<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<hr>
+<h5 id="解题报告："><a href="#解题报告：" class="headerlink" title="解题报告："></a>解题报告：</h5><hr>
+<ul>
+<li>算法实现很简单，以前打比赛的时候习惯用C++，现在学了java，就试着用java去实现，也顺便学习一下java，太久没有敲代码了，很多基本语法都不熟悉，直奔主题吧。<ol>
+<li>键盘输入数据，必须先用关键字<em>import</em>引入<em>java.util</em>包中的<em>Scanner类</em>，然后创建一个<em>Scanner</em>对象，再按需调用该对象的引入方法即可实现键盘输入各种数据类型的数据。</li>
+<li>Scanner*类的常用方法<ol>
+<li>字符串输入<ul>
+<li>next()<ol>
+<li>一定要读取到有效字符后才可以结束输入。</li>
+<li>对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。</li>
+<li>只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。</li>
+<li>不能得到带有空格的字符串。</li>
+</ol>
+</li>
+<li>nextLine()<ol>
+<li>以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。</li>
+<li>可以获得空白。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>其他数据类型<ul>
+<li>int—————-nextInt().</li>
+<li>float———- -nextFloat().</li>
+<li>double——nextDouble().</li>
+<li><strong><em>备注：输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取。</em></strong></li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
 
             </div>
             <hr>
@@ -384,7 +461,7 @@
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="furr3r.github.io" class="b-link-green">furrer</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/10/27/hello-world/" class="b-link-green">Hello World;</a>
+                    <a href="/2018/10/28/pta乙级1001解题报告/" class="b-link-green">pat乙级1001解题报告</a>
                 </p>
             </div>
         </div>
@@ -405,9 +482,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'furr3r.github.io/2018/10/27/hello-world/';
-        this.page.identifier = '/2018/10/27/hello-world/';
-        this.page.title = 'Hello World;';
+        this.page.url = 'furr3r.github.io/2018/10/28/pta乙级1001解题报告/';
+        this.page.identifier = '/2018/10/28/pta乙级1001解题报告/';
+        this.page.title = 'pat乙级1001解题报告';
     };
     let disqus_shortname = 'MTAyMC80MDYwNi8xNzEzMw==';
 
@@ -427,7 +504,7 @@
     <div class="row article-row">
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">上一篇</div>
+            <div class="article-badge left-badge text-color">本篇</div>
             <div class="card">
                 <a href="/2018/10/28/pta乙级1001解题报告/">
                     <div class="card-image">
@@ -443,9 +520,9 @@
 卡拉兹(Callatz)猜想：
 对任何一个正整数 n，如果它是偶数，那么把它砍掉一半；如果它是奇数，那么把 (3n+1) 砍掉一半。这样一直反复砍下去，最后一定在某一步得到 n=1。卡</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -458,6 +535,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -480,7 +558,7 @@
         
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">本篇</div>
+            <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
                 <a href="/2018/10/27/hello-world/">
                     <div class="card-image">
@@ -505,7 +583,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -518,8 +595,8 @@
         <div class="toc-widget">
             <h4>目录</h4>
             <div id="toc-content">
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
-            </div>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#1001-害死人不偿命的-3n-1-猜想-（15-分）"><span class="post-toc-text">1001 害死人不偿命的(3n+1)猜想 （15 分）</span></a></li></ol><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#输入格式"><span class="post-toc-text">输入格式:</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#输出格式："><span class="post-toc-text">输出格式：</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#输入样例："><span class="post-toc-text">输入样例：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#输出样例："><span class="post-toc-text">#输出样例：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#解题报告："><span class="post-toc-text">解题报告：</span></a>
+            </li></ol></li></ol></li></div>
         </div>
     </div>
 </div>
