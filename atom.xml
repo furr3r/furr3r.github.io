@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="furr3r.github.io/"/>
-  <updated>2018-10-28T13:10:38.223Z</updated>
+  <updated>2018-11-05T15:19:38.649Z</updated>
   <id>furr3r.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>域名解析的记录类型</title>
+    <link href="furr3r.github.io/2018/11/05/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
+    <id>furr3r.github.io/2018/11/05/域名解析/</id>
+    <published>2018-11-05T14:58:09.000Z</published>
+    <updated>2018-11-05T15:19:38.649Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;###1.
+        
+      
+    
+    </summary>
+    
+      <category term="网络" scheme="furr3r.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="网络" scheme="furr3r.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="域名" scheme="furr3r.github.io/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>pat乙级1001解题报告</title>
@@ -50,32 +78,6 @@
     <title>Hello world!</title>
     <link href="furr3r.github.io/2018/10/20/hello-world/"/>
     <id>furr3r.github.io/2018/10/20/hello-world/</id>
-    <published>2018-10-20T13:03:09.000Z</published>
-    <updated>2018-10-28T13:11:56.726Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h6 id=&quot;第一篇博客写给自己———勿忘初心。&quot;&gt;&lt;a href=&quot;#第一篇博客写给自己———勿忘初心。&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="牢骚" scheme="furr3r.github.io/categories/%E7%89%A2%E9%AA%9A/"/>
-    
-    
-      <category term="自勉" scheme="furr3r.github.io/tags/%E8%87%AA%E5%8B%89/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello world!</title>
-    <link href="furr3r.github.io/2018/10/20/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
-    <id>furr3r.github.io/2018/10/20/域名解析/</id>
     <published>2018-10-20T13:03:09.000Z</published>
     <updated>2018-10-28T13:11:56.726Z</updated>
     
