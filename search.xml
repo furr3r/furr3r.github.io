@@ -3,25 +3,25 @@
   
     
     <entry>
-      <title>域名解析的记录类型</title>
-      <link href="/2018/11/05/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%20-%20%E5%89%AF%E6%9C%AC/"/>
-      <url>/2018/11/05/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%20-%20%E5%89%AF%E6%9C%AC/</url>
+      <title>java学习之类模块(一)</title>
+      <link href="/2018/11/19/java%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%B1%BB%E6%A8%A1%E5%9D%97(%E4%B8%80)/"/>
+      <url>/2018/11/19/java%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%B1%BB%E6%A8%A1%E5%9D%97(%E4%B8%80)/</url>
       
-        <content type="html"><![CDATA[<ol><li><p><strong>什么是域名解析？</strong></p><p> 域名解析就是国际域名或者国内域名以及中文域名等域名申请后做的到IP地址的转换过程。IP地址是网路上标识您站点的数字地址，为了简单好记，采用域名来代替IP地址标识站点地址。域名的解析工作由DNS服务器完成。</p></li></ol><hr><ol start="2"><li><p><strong>什么是A记录？</strong></p><p> A (Address) 记录是用来指定主机名（或域名）对应的IP地址记录。用户可以将该域名下的网站服务器指向到自己的web server上。同时也可以设置您域名的二级域名。</p></li></ol><hr><ol start="3"><li><p><strong>什么是CNAME记录？</strong></p><p> 即：别名记录。这种记录允许您将多个名字映射到另外一个域名。通常用于同时提供WWW和MAIL服务的计算机。例如，有一台计算机名为”hostfurrer.fun”（A记录）。它同时提供WWW和MAIL服务，为了便于用户访问服务。可以为该计算机设置两个别名（CNAME）：WWW和MAIL 。这两个别名的全称就是<em>“<a href="http://www.furrer.fun&quot;" target="_blank" rel="noopener">www.furrer.fun&quot;</a></em> 和<em>“mail.furrer.fun”</em> 。实际上他们都指向<em>“host.furrer.fun”</em>。</p></li></ol><hr><ol><li><p><strong>使用A记录和CNAME进行域名解析的区别</strong></p><p> A记录就是把一个域名解析到一个IP地址（Address，特制数字IP地址），而CNAME记录就是把域名解析到另外一个域名。其功能是差不多，CNAME将几个主机名指向一个别名，其实跟指向IP地址是一样的，因为这个别名也要做一个A记录的。但是使用CNAME记录可以很方便地变更IP地址。如果一台服务器有100个网站，他们都做了别名，该台服务器变更IP时，只需要变更别名的A记录就可以了。</p></li></ol><hr><ol start="5"><li><p><strong>使用A记录和CNAME哪个好？</strong></p><p> 域名解析CNAME记录A记录哪一种比较好？如果论对网站的影响，就没有多大区别。但是：CNAME有一个好处就是稳定，就好像一个IP与一个域名的区别。服务商从方便维护的角度，一般也建议用户使用CNAME记录绑定域名的。如果主机使用了双线IP，显然使用CNAME也要方便一些。</p></li></ol><hr><p>###<strong>主机记录：</strong></p><ol><li><p>www表示解析后域名为 www.域名</p></li><li><p>@表示直接解析主域名  </p></li><li><p><em>表示泛解析 </em>.域名</p></li></ol><hr><p>###<strong>记录类型：</strong></p><ul><li><p>A记录：地址记录，用来指定域名的IPv4地址，如果需要将域名指向一个IP地址，就需要添加A记录。</p></li><li><p>CNAME： 如果需要将域名指向另一个域名，再由另一个域名提供ip地址，就需要添加CNAME记录。</p></li><li><p>TXT：在这里可以填写任何东西，长度限制255。绝大多数的TXT记录是用来做SPF记录（反垃圾邮件）。</p></li><li><p>NS：域名服务器记录，如果需要把子域名交给其他DNS服务商解析，就需要添加NS记录。</p></li><li><p>AAAA：用来指定主机名（或域名）对应的IPv6地址（例如：ff06:0:0:0:0:0:0:c3）记录。</p></li><li><p>MX：如果需要设置邮箱，让邮箱能收到邮件，就需要添加MX记录。</p></li><li><p>显性URL：从一个地址301重定向到另一个地址的时候，就需要添加显性URL记录（注：DNSPod目前只支持301重定向）。</p></li><li><p>隐性URL：类似于显性URL，区别在于隐性URL不会改变地址栏中的域名。</p></li><li><p>SRV：记录了哪台计算机提供了哪个服务。格式为：服务的名字、点、协议的类型</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="要点"><a href="#要点" class="headerlink" title="要点"></a><strong>要点</strong></h2><ol><li>类定义对象所知及所为。</li><li>对象所知者是实例变量。</li><li>对象所为者是方法。</li><li>方法可依据实例变量来展现不同的行为。</li><li>方法可使用参数，这代表你可以传入一个或者多个值给方法。</li><li>传给方法的参数必须符合声明时的数量、顺序和类型。</li><li>传入和传出方法的值类型可以隐含地放大或是明确的缩小。</li><li>传给方法的参数值可以是直接指定的文字或数字（例如2或者‘c’等）或者是与所声明参数相同类型的变量。</li><li>方法必须声明返回类型。使用void类型代表方法不返回任何东西。</li><li>如果方法声明了非void的返回类型，那就一定要返回与声明类型相同的值。</li></ol>]]></content>
       
       
       <categories>
           
-          <category> 网络 </category>
+          <category> java </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 网络 </tag>
+            <tag> java </tag>
             
-            <tag> 域名 </tag>
+            <tag> 类 </tag>
             
         </tags>
       
@@ -32,7 +32,7 @@
       <link href="/2018/11/05/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/"/>
       <url>/2018/11/05/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90/</url>
       
-        <content type="html"><![CDATA[<ol><li><p><strong>什么是域名解析？</strong></p><p> 域名解析就是国际域名或者国内域名以及中文域名等域名申请后做的到IP地址的转换过程。IP地址是网路上标识您站点的数字地址，为了简单好记，采用域名来代替IP地址标识站点地址。域名的解析工作由DNS服务器完成。</p></li></ol><hr><ol start="2"><li><p><strong>什么是A记录？</strong></p><p> A (Address) 记录是用来指定主机名（或域名）对应的IP地址记录。用户可以将该域名下的网站服务器指向到自己的web server上。同时也可以设置您域名的二级域名。</p></li></ol><hr><ol start="3"><li><p><strong>什么是CNAME记录？</strong></p><p> 即：别名记录。这种记录允许您将多个名字映射到另外一个域名。通常用于同时提供WWW和MAIL服务的计算机。例如，有一台计算机名为”hostfurrer.fun”（A记录）。它同时提供WWW和MAIL服务，为了便于用户访问服务。可以为该计算机设置两个别名（CNAME）：WWW和MAIL 。这两个别名的全称就是<em>“<a href="http://www.furrer.fun&quot;" target="_blank" rel="noopener">www.furrer.fun&quot;</a></em> 和<em>“mail.furrer.fun”</em> 。实际上他们都指向<em>“host.furrer.fun”</em>。</p></li></ol><hr><ol><li><p><strong>使用A记录和CNAME进行域名解析的区别</strong></p><p> A记录就是把一个域名解析到一个IP地址（Address，特制数字IP地址），而CNAME记录就是把域名解析到另外一个域名。其功能是差不多，CNAME将几个主机名指向一个别名，其实跟指向IP地址是一样的，因为这个别名也要做一个A记录的。但是使用CNAME记录可以很方便地变更IP地址。如果一台服务器有100个网站，他们都做了别名，该台服务器变更IP时，只需要变更别名的A记录就可以了。</p></li></ol><hr><ol start="5"><li><p><strong>使用A记录和CNAME哪个好？</strong></p><p> 域名解析CNAME记录A记录哪一种比较好？如果论对网站的影响，就没有多大区别。但是：CNAME有一个好处就是稳定，就好像一个IP与一个域名的区别。服务商从方便维护的角度，一般也建议用户使用CNAME记录绑定域名的。如果主机使用了双线IP，显然使用CNAME也要方便一些。</p></li></ol><hr><p>###<strong>主机记录：</strong></p><ol><li><p>www表示解析后域名为 www.域名</p></li><li><p>@表示直接解析主域名  </p></li><li><p><em>表示泛解析 </em>.域名</p></li></ol><hr><p>###<strong>记录类型：</strong></p><ul><li><p>A记录：地址记录，用来指定域名的IPv4地址，如果需要将域名指向一个IP地址，就需要添加A记录。</p></li><li><p>CNAME： 如果需要将域名指向另一个域名，再由另一个域名提供ip地址，就需要添加CNAME记录。</p></li><li><p>TXT：在这里可以填写任何东西，长度限制255。绝大多数的TXT记录是用来做SPF记录（反垃圾邮件）。</p></li><li><p>NS：域名服务器记录，如果需要把子域名交给其他DNS服务商解析，就需要添加NS记录。</p></li><li><p>AAAA：用来指定主机名（或域名）对应的IPv6地址（例如：ff06:0:0:0:0:0:0:c3）记录。</p></li><li><p>MX：如果需要设置邮箱，让邮箱能收到邮件，就需要添加MX记录。</p></li><li><p>显性URL：从一个地址301重定向到另一个地址的时候，就需要添加显性URL记录（注：DNSPod目前只支持301重定向）。</p></li><li><p>隐性URL：类似于显性URL，区别在于隐性URL不会改变地址栏中的域名。</p></li><li><p>SRV：记录了哪台计算机提供了哪个服务。格式为：服务的名字、点、协议的类型</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<ol><li><p><strong>什么是域名解析？</strong></p><p> 域名解析就是国际域名或者国内域名以及中文域名等域名申请后做的到IP地址的转换过程。IP地址是网路上标识您站点的数字地址，为了简单好记，采用域名来代替IP地址标识站点地址。域名的解析工作由DNS服务器完成。</p></li></ol><hr><ol start="2"><li><p><strong>什么是A记录？</strong></p><p> A (Address) 记录是用来指定主机名（或域名）对应的IP地址记录。用户可以将该域名下的网站服务器指向到自己的web server上。同时也可以设置您域名的二级域名。</p></li></ol><hr><ol start="3"><li><p><strong>什么是CNAME记录？</strong></p><p> 即：别名记录。这种记录允许您将多个名字映射到另外一个域名。通常用于同时提供WWW和MAIL服务的计算机。例如，有一台计算机名为”hostfurrer.fun”（A记录）。它同时提供WWW和MAIL服务，为了便于用户访问服务。可以为该计算机设置两个别名（CNAME）：WWW和MAIL 。这两个别名的全称就是<em>“<a href="http://www.furrer.fun&quot;" target="_blank" rel="noopener">www.furrer.fun&quot;</a></em> 和<em>“mail.furrer.fun”</em> 。实际上他们都指向<em>“host.furrer.fun”</em>。</p></li></ol><hr><ol><li><p><strong>使用A记录和CNAME进行域名解析的区别</strong></p><p> A记录就是把一个域名解析到一个IP地址（Address，特制数字IP地址），而CNAME记录就是把域名解析到另外一个域名。其功能是差不多，CNAME将几个主机名指向一个别名，其实跟指向IP地址是一样的，因为这个别名也要做一个A记录的。但是使用CNAME记录可以很方便地变更IP地址。如果一台服务器有100个网站，他们都做了别名，该台服务器变更IP时，只需要变更别名的A记录就可以了。</p></li></ol><hr><ol start="5"><li><p><strong>使用A记录和CNAME哪个好？</strong></p><p> 域名解析CNAME记录A记录哪一种比较好？如果论对网站的影响，就没有多大区别。但是：CNAME有一个好处就是稳定，就好像一个IP与一个域名的区别。服务商从方便维护的角度，一般也建议用户使用CNAME记录绑定域名的。如果主机使用了双线IP，显然使用CNAME也要方便一些。</p></li></ol><hr><p><strong>主机记录：</strong></p><ol><li><p>www表示解析后域名为 www.域名</p></li><li><p>@表示直接解析主域名  </p></li><li><p><em>表示泛解析 </em>.域名</p></li></ol><hr><p><strong>记录类型：</strong></p><ul><li><p>A记录：地址记录，用来指定域名的IPv4地址，如果需要将域名指向一个IP地址，就需要添加A记录。</p></li><li><p>CNAME： 如果需要将域名指向另一个域名，再由另一个域名提供ip地址，就需要添加CNAME记录。</p></li><li><p>TXT：在这里可以填写任何东西，长度限制255。绝大多数的TXT记录是用来做SPF记录（反垃圾邮件）。</p></li><li><p>NS：域名服务器记录，如果需要把子域名交给其他DNS服务商解析，就需要添加NS记录。</p></li><li><p>AAAA：用来指定主机名（或域名）对应的IPv6地址（例如：ff06:0:0:0:0:0:0:c3）记录。</p></li><li><p>MX：如果需要设置邮箱，让邮箱能收到邮件，就需要添加MX记录。</p></li><li><p>显性URL：从一个地址301重定向到另一个地址的时候，就需要添加显性URL记录（注：DNSPod目前只支持301重定向）。</p></li><li><p>隐性URL：类似于显性URL，区别在于隐性URL不会改变地址栏中的域名。</p></li><li><p>SRV：记录了哪台计算机提供了哪个服务。格式为：服务的名字、点、协议的类型</p></li></ul>]]></content>
       
       
       <categories>
